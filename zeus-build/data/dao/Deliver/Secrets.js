@@ -25,6 +25,10 @@ var dao = daoApi.create({
 			name: "Password",
 			column: "PASSWORD",
 			type: "VARCHAR",
+		}, {
+			name: "Host",
+			column: "HOST",
+			type: "VARCHAR",
 		}]
 });
 exports.list = function(settings) {

@@ -73,14 +73,19 @@
                         "name": "SECRETTYPE"
                     }, {
                         "type": "VARCHAR",
-                        "length": 20,
+                        "length": 32,
                         "nullable": true,
                         "name": "USERNAME"
                     }, {
                         "type": "VARCHAR",
-                        "length": 20,
+                        "length": 32,
                         "nullable": true,
                         "name": "PASSWORD"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 128,
+                        "nullable": true,
+                        "name": "HOST"
                     }]
             }, {
                 "name": "ZEUS_SECRET_TYPES",
