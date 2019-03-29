@@ -1,4 +1,4 @@
-var rs = require('http/v3/rs');
+var rs = require('http/v4/rs');
 var dao = require('zeus-build/data/dao/Deliver/ServiceAccounts');
 var http = require('zeus-build/api/http');
 
