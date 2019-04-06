@@ -50,7 +50,6 @@ exports.update = function(entity) {
 };
 
 exports.delete = function(id) {
-	var entity = this.get(id);
 	dao.remove(id);
 	triggerEvent("Delete", {
 		table: "ZEUS_SERVICE_ACCOUNTS",
@@ -58,8 +57,7 @@ exports.delete = function(id) {
 			name: "Id",
 			column: "ID",
 			value: id
-		},
-		entity: entity
+		}
 	});
 };
 

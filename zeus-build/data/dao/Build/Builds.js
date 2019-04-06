@@ -10,6 +10,10 @@ var dao = daoApi.create({
 			type: "INTEGER",
 			id: true,
 		}, {
+			name: "Name",
+			column: "NAME",
+			type: "VARCHAR",
+		}, {
 			name: "Image",
 			column: "IMAGE",
 			type: "VARCHAR",
@@ -62,7 +66,6 @@ exports.update = function(entity) {
 };
 
 exports.delete = function(id) {
-	var entity = this.get(id);
 	dao.remove(id);
 	triggerEvent("Delete", {
 		table: "ZEUS_BUILDS",
@@ -70,8 +73,7 @@ exports.delete = function(id) {
 			name: "Id",
 			column: "ID",
 			value: id
-		},
-		entity: entity
+		}
 	});
 };
 
